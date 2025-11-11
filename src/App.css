@@ -1,0 +1,33 @@
+@import "tailwindcss";
+li:hover{
+color: blue
+}
+body{
+    font-family: "Roboto", sans-serif;
+   
+}
+
+
+.box {
+    margin-top: 80px;
+    margin-left: 30px;
+  width: 600px;
+  height: 200px;
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+ text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  
+  /* 3D rotation */
+  transform: rotateY(25deg) rotateX(10deg);
+  transition: transform 0.5s ease;
+}
+
+.box:hover {
+  transform: rotateY(-25deg) rotateX(10deg) scale(1.1);
+}
